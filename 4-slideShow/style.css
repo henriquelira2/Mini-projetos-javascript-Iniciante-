@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tablet {
+    background-image: url(img/Laptop.png);
+    background-repeat: no-repeat;
+    background-size: 63% 78%;
+    background-position: center;
+    border-style: solid;
+    border-color: aliceblue;
+}
+
+.container-slide {
+    display: flex;
+    width: 55vw;
+    height: 55vh;
+    justify-content: space-between;
+    margin: 20vh auto;
+    border-radius: 10px;
+}
+
+.container-items {
+    position: absolute;
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    border-radius: -47px;
+    overflow: hidden;
+    right: 25%;
+    top: 14%;
+}
+
+.item {
+    width: 50vw;
+    height: 50vh;
+    transition: all 1s;
+}
+
+.item:first-child {
+    margin-left: -100%;
+}
+
+.item img {
+    width: 50vw;
+    height: 50vh;
+}
+
+.action-button {
+    font: bold 30px sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 91%;
+    color: #00000000;
+    user-select: none;
+    z-index: 1;
+    margin-left: 30px;
+    margin-right: 29px;
+    margin-top: -7.3%;
+}
+
+.action-button:hover {
+    color: white;
+    background-color: #00000066;
+    cursor: pointer;
+    transition: all 1s;
+}

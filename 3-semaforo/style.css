@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    background: rgb(10, 10, 10);
+}
+
+.teste {
+    position: absolute;
+    top: 100px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    margin: 85px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: darkgray;
+}
+
+#vermelho:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#amarelo:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#verde:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+#automatic:hover {
+    background-color: crimson;
+    cursor: pointer;
+}

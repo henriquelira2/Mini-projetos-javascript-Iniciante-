@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+
+main {
+    background-color: teal;
+    flex-grow: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.slider {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.slider .owl-item.active.center .slider-card {
+    transform: scale(1.15);
+    opacity: 1;
+    background: #f46b45;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eea849, #f46b45);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eea849, #f46b45);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+}
+.owl-item.active .slider-card {
+   
+    background: #f46b45;
+    background: -webkit-linear-gradient(to right, #eea849, #f46b45);
+    background: linear-gradient(to right, #eea849, #f46b45);
+    color: #fff;
+}
+
+.slider-card {
+    background-color: rgb(238, 238, 238);
+    margin: 50px 15px 90px 15px;
+    border-radius: 5px;
+    box-shadow: 0 15px 45px -20px rgba(214, 13, 13, 0.493);
+    transform: scale(0.9);
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.slider-card img {
+    border-radius: 5px 5px 0px 0px;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    top: calc(50% - 25px);
+    right: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    opacity: 1;
+    font-size: 30px !important;
+    z-index: 1;
+}
