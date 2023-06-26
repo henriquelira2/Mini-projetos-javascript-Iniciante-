@@ -1,161 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projetos</title>
-    <link rel="icon" href="img/js-icon.png" />
+<html lang="pt-br">
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/js-icon.png" />
 
-  <body>
-    <main>
-      <section id="slider" class="pt-5">
-        <div class="container">
-          <h1 class="text-center">
-            <b>Mini Projetos com javascript puro</b>
-          </h1>
+  <title>Slid-3D</title>
+</head>
 
-          <div class="slider">
-            <div class="owl-carousel">
-              <a href="1-calculadora-imc/index.html">
-                <div class="slider-card">
-                  <div
-                    class="d-flex justify-content-center align-intems-center mb-4"
-                  >
-                    <img src="img/Calculadora-IMC.png" />
-                  </div>
-                  <h5 class="text-center">Calculadora IMC</h5>
-                  <p class="text-center p-4"></p>
-                </div>
-              </a>
+<body>
+  <div class="title">
+    <h1 class="text-center">
+      <b>Mini Projetos com <br> &nbsp javascript puro</b>
+    </h1>
+  </div>
+  <div class="carousel">
+    <div class="carousel__cards" id="cards">
 
-              <a href="2-lampada/index.html">
-                <div class="slider-card">
-                  <div
-                    class="d-flex justify-content-center align-intems-center mb-4"
-                  >
-                    <img src="img/Lampada-1.png" />
-                  </div>
-                  <h5 class="text-center">Lâmpada 1</h5>
-                  <p class="text-center p-4"></p>
-                </div>
-              </a>
+      <a class="carousel__card" href="1-calculadora-imc/index.html">
+        <img class="carousel__img" src="img/Calculadora-IMC.png" alt=”#”>
+      </a>
 
-              <a href="4-slideShow/index.html">
-                <div class="slider-card">
-                  <div
-                    class="d-flex justify-content-center align-intems-center mb-4"
-                  >
-                    <img src="img/Slide-Show.png" />
-                  </div>
-                  <h5 class="text-center">Slide Show</h5>
-                  <p class="text-center p-4"></p>
-                </div>
-              </a>
-              <a href="5-drum-kit/index.html">
-                <div class="slider-card">
-                  <div
-                    class="d-flex justify-content-center align-intems-center mb-4"
-                  >
-                    <img src="img/Drum-Kit.png" />
-                  </div>
-                  <h5 class="text-center">Drum-Kit</h5>
-                  <p class="text-center p-4"></p>
-                </div>
-              </a>
+      <a class="carousel__card" href="7-calculadora/index.html">
+        <img class="carousel__img" src="img/Calculadora.png" alt=”#”>
+      </a>
+      <a class="carousel__card" href="6-countdown/index.html">
+        <img class="carousel__img" src="img/Countdown.png" alt=”#”>
+      </a>
+      <a class="carousel__card" href="9-crud/index.html">
+        <img class="carousel__img" src="img/CRUD.png" alt=”#”>
+      </a>
+      <a class="carousel__card" href="5-drum-kit/index.html">
+        <img class="carousel__img" src="img/Drum-Kit.png" alt=”#”>
+      </a>
+      <a class="carousel__card" href="2-lampada/index.html">
+        <img class="carousel__img" src="img/Lampada-1.png" alt=”#”>
+      </a>
+      <a class="carousel__card" href="2.1-lampada/index.html">
+        <img class="carousel__img" src="img/Lampada-2.png" alt=”#”>
+      </a>
+      <a class="carousel__card" href="3-semaforo/index.html">
+        <img class="carousel__img" src="img/semaforo.png" alt=”#”>
+      </a>
+      <a class="carousel__card" href="8-todo-list/index.html">
+        <img class="carousel__img" src="img/Todo-List.png" alt=”#”>
+      </a>
+    </div>
+    <div class="carousel__control">
+      <button class="carousel__btn carousel__btn–back" id="btnBack">&#8678; Prev</button>
+      <button class="carousel__btn carousel__btn–next" id="btnNext">Next &#8680;</button>
+    </div>
+  </div>
 
-              <a href="6-countdown/index.html">
-                <div class="slider-card">
-                  <div
-                    class="d-flex justify-content-center align-intems-center mb-4"
-                  >
-                    <img src="img/Countdown.png" />
-                  </div>
-                  <h5 class="text-center">CountDown</h5>
-                  <p class="text-center p-4"></p>
-                </div>
-              </a>
 
-              <a href="7-calculadora/index.html">
-                <div class="slider-card">
-                  <div
-                    class="d-flex justify-content-center align-intems-center mb-4"
-                  >
-                    <img src="img/Calculadora.png" />
-                  </div>
-                  <h5 class="text-center">Calculadora</h5>
-                  <p class="text-center p-4"></p>
-                </div>
-              </a>
-
-              <a href="8-todo-list/index.html">
-                <div class="slider-card">
-                  <div
-                    class="d-flex justify-content-center align-intems-center mb-4"
-                  >
-                    <img src="img/Todo-List.png" />
-                  </div>
-                  <h5 class="text-center">To-do-list</h5>
-                  <p class="text-center p-4"></p>
-                </div>
-              </a>
-
-              <a href="2.1-lampada/index.html">
-                <div class="slider-card">
-                  <div
-                    class="d-flex justify-content-center align-intems-center mb-4"
-                  >
-                    <img src="img/Lampada-2.png" />
-                  </div>
-                  <h5 class="text-center">Lâmpada 2</h5>
-                  <p class="text-center p-4"></p>
-                </div>
-              </a>
-
-              <a href="9-crud/index.html">
-                <div class="slider-card">
-                  <div
-                    class="d-flex justify-content-center align-intems-center mb-4"
-                  >
-                    <img src="img/CRUD.png" />
-                  </div>
-                  <h5 class="text-center">CRUD</h5>
-                  <p class="text-center p-4"></p>
-                </div>
-              </a>
-              <a href="3-semaforo/index.html">
-                <div class="slider-card">
-                  <div
-                    class="d-flex justify-content-center align-intems-center mb-4"
-                  >
-                    <img src="img/semaforo.png" />
-                  </div>
-                  <h5 class="text-center">Semaforo</h5>
-                  <p class="text-center p-4"></p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
   <script src="js/script.js"></script>
+</body>
+
 </html>

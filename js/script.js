@@ -1,26 +1,15 @@
-// Owlcarousel
+const next = document.querySelector(".carousel__btn–next"),
+    back = document.querySelector(".carousel__btn–back"),
+    carousel = document.querySelector(".carousel__cards");
 
-$(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 10,
-    responsiveClass: true,
-    center: true,
-    nav: true,
-    navText: [
-      "<i class='fa fa-angle-left'></i>",
-      "<i class='fa fa-angle-right'></i>",
-    ],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 3,
-      },
-    },
-  });
+let angle = 0;
+
+next.addEventListener("click", () => {
+    angle -= 40;
+    carousel.style.transform = `translateZ(-25rem) rotateY(${angle}deg)`;
+});
+
+back.addEventListener("click", () => {
+    angle += 40;
+    carousel.style.transform = `translateZ(-25rem) rotateY(${angle}deg)`;
 });
